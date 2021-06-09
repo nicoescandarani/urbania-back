@@ -43,16 +43,17 @@ npm install
 > Nota: En entorno productivo no es necesario este paso.
 
 
+## Ruta
+```sh
+https://api-urbanialogin.azurewebsites.net/api/Login
+```
+
+
 ## Respuestas del servidor
 ```sh
 200: Se ha logueado correctamente.
 400: No se ingresaron los datos requeridos para realizar el login.
 401: Los datos ingresados no coinciden con los almacenados en el Keyvault.
-```
-
-## Ruta
-```sh
-https://api-urbanialogin.azurewebsites.net/api/Login
 ```
 
 ## License
