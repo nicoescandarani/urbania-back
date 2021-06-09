@@ -42,18 +42,7 @@ let methods = {
             client = new SecretClient(keyVaultURL, credential)
         }
         return client
-    },
-
-    saveToken: async function(user, token){
-        let nombreSecreto = "token-" + user
-        try{
-            let client = this.getClient("Default")
-            await client.setSecret(nombreSecreto, token)
-        } catch {
-            let client = this.getClient("ByClientID")
-            await client.setSecret(nombreSecreto, token)
-        }    
-    },
+    }
 }
 
 module.exports = methods;
